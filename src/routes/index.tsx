@@ -12,7 +12,7 @@ function App() {
   const signIn = async () => {
     await authClient.signIn.social({
       provider: 'github',
-      callbackURL: 'http://localhost:3000/dashboard',
+      callbackURL: '/dashboard',
     })
   }
 
